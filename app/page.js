@@ -16,12 +16,37 @@ export default function Home() {
     setIsHydrated(true);
   }, []);
 
+  const loadingDiv = useRef(null);
+  const [imgLoading, setImgLoading] = useState(true);
+
+  useEffect(() => {
+    const img = loadingDiv.current.querySelector("img");
+
+    function loaded() {
+      setImgLoading(false);
+    }
+
+    if (img.complete) {
+      loaded();
+    } else {
+      img.addEventListener("load", loaded);
+    }
+  }, []);
+
+  const backgroundImage = "https://i.imgur.com/U9oCVpW.jpg";
+
   return (
     <section className={styles.container}>
       <Navbar />
       <FloatingCart />
       <div className={styles.hero}>
-        <div className={styles.hero_content}>
+        <div
+          className={styles.hero_content}
+          style={{
+            backgroundColor: imgLoading ? "" : "#32383c30",
+            backdropFilter: imgLoading ? "" : "blur(4px)",
+          }}
+        >
           <h1>
             Tus experiencia gaming en <span>otro nivel</span>.
           </h1>
@@ -31,6 +56,14 @@ export default function Home() {
           </p>
 
           <Link href="/productos">Ver productos</Link>
+        </div>
+        <div className={styles.hero_decorative} ref={loadingDiv}>
+          <img
+            src={backgroundImage}
+            alt="Example image"
+            className={imgLoading ? "loading" : "loaded"}
+          />
+          ;
         </div>
       </div>
       <Footer />
