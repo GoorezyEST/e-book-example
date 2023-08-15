@@ -16,25 +16,6 @@ export default function Home() {
     setIsHydrated(true);
   }, []);
 
-  const loadingDiv = useRef(null);
-  const [imgLoading, setImgLoading] = useState(true);
-
-  useEffect(() => {
-    const img = loadingDiv.current.querySelector("img");
-
-    function loaded() {
-      setImgLoading(false);
-    }
-
-    if (img.complete) {
-      loaded();
-    } else {
-      img.addEventListener("load", loaded);
-    }
-  }, []);
-
-  const backgroundImage = "https://i.imgur.com/cY55hCJ.jpg";
-
   return (
     <section className={styles.container}>
       <Navbar />
@@ -42,28 +23,14 @@ export default function Home() {
       <div className={styles.hero}>
         <div className={styles.hero_content}>
           <h1>
-            Productos de calidad a <span> un buen precio</span>.
+            Tus experiencia gaming en <span>otro nivel</span>.
           </h1>
           <p>
-            Aqui podrás encontrar diversos productos de limpieza precio calidad
-            para el cuidado de tu hogar, no dudes y comienza a ver nuestros
-            productos.
+            Ofrecemos una amplia gama de productos gaming de primer nivel, para
+            brindar confort y performance a tu pasión
           </p>
-          <Link href="/productos">Ver productos</Link>
-        </div>
 
-        <div
-          className={styles.hero_decorative}
-          ref={loadingDiv}
-          style={{
-            backgroundImage: `url(${resizeImgurImages(backgroundImage)})`,
-          }}
-        >
-          <img
-            src={backgroundImage}
-            alt="Example image"
-            className={imgLoading ? "loading" : "loaded"}
-          />
+          <Link href="/productos">Ver productos</Link>
         </div>
       </div>
       <Footer />

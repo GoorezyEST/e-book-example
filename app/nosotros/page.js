@@ -20,10 +20,10 @@ export default function Nosotros() {
           <h1>¿Qué somos?</h1>
           <p>
             Nuestra tienda cuenta con una diversidad de productos, incluyendo
-            detergentes, desinfectantes, suavizantes, accesorios y mucho más.
-            Además, regularmente ofrecemos promociones especiales y descuentos
-            exclusivos para nuestros clientes, permitiéndoles acceder a una
-            limpieza efectiva a un precio económico.
+            perifericos, componentes, gabinetes, pantallas y mucho más. Además,
+            regularmente ofrecemos promociones especiales y descuentos
+            exclusivos para nuestros clientes, permitiéndoles acceder a packs de
+            marcas de renombre a un precio imperdible.
           </p>
         </div>
         <div className={styles.contact}>
@@ -35,19 +35,19 @@ export default function Nosotros() {
                   <path d="M391 480c-19.52 0-46.94-7.06-88-30-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0128.64-15.2c1-.43 1.93-.84 2.76-1.21 4.95-2.23 12.45-5.6 21.95-2 6.34 2.38 12 7.25 20.86 16 18.17 17.92 43 57.83 52.16 77.43 6.15 13.21 10.22 21.93 10.23 31.71 0 11.45-5.76 20.28-12.75 29.81-1.31 1.79-2.61 3.5-3.87 5.16-7.61 10-9.28 12.89-8.18 18.05 2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47 1.48-1.13 3-2.3 4.59-3.47 10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18 18 9.08 59.11 33.59 77.14 51.78 8.77 8.84 13.66 14.48 16.05 20.81 3.6 9.53.21 17-2 22-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 01-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 01391 480z" />
                 </svg>
               </span>
-              <p>223 222 22222</p>
+              <p>123 123 1234</p>
             </li>
             <li>
               <span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path
-                    d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
-                    fillRule="evenodd"
-                  />
+                  <path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" />
                 </svg>
               </span>
-              <Link href="https://www.instagram.com" target="_blank">
-                Facebook
+              <Link
+                href="https://www.linkedin.com/in/franco-espinosa/"
+                target="_blank"
+              >
+                Linkedin
               </Link>
             </li>
             <li>
@@ -57,7 +57,7 @@ export default function Nosotros() {
                   <path d="M252.57 221c-14.83 2.33-31.56 15.84-33.34 36.26-1 11.06 2 21.22 8.07 27.87a23.65 23.65 0 0017.91 7.75c20.31 0 34.73-14.94 36.75-38.06a14 14 0 01.34-2.07l3.2-25.45a49.61 49.61 0 00-32.93-6.3z" />
                 </svg>
               </span>
-              <p>unemail@gmail.com</p>
+              <p>francoespinosa.dev@gmail.com</p>
             </li>
           </ul>
         </div>
@@ -81,10 +81,9 @@ export default function Nosotros() {
         <div className={styles.map}>
           <h4>¿Dónde estámos?</h4>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1635.3440858636868!2d-57.93345607643381!3d-34.939356714505536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e8b94fad9b05%3A0xc2136c1278dc8454!2sCalle%2014%20%26%20C.%2074%2C%20B1912%20Altos%20de%20San%20Lorenzo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1690661868798!5m2!1ses!2sar"
-            allowFullScreen=""
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d100557.35651733092!2d-58.07258270730989!3d-38.037359737242106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDAyJzU1LjYiUyA1OMKwMDAnNDYuMyJX!5e0!3m2!1ses!2sar!4v1692123699654!5m2!1ses!2sar"
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>

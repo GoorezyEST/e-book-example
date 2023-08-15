@@ -48,7 +48,7 @@
 .navbar_icon {
   grid-area: title;
   width: auto;
-  height: 50px;
+  height: 32px;
   display: block;
 }
 

@@ -13,7 +13,7 @@
 
 .success {
   width: 100%;
-  background-color: var(--primary-l);
+  background-color: var(--primary-g);
   height: auto;
   display: flex;
   flex-direction: column;
@@ -25,14 +25,14 @@
 .success > svg {
   height: 36px;
   width: auto;
-  fill: green;
+  fill: var(--accent);
   user-select: none;
   cursor: default;
 }
 
 .success > span {
   font-size: 20px;
-  color: green;
+  color: var(--accent);
   font-weight: 700;
   user-select: none;
   cursor: default;
@@ -40,7 +40,7 @@
 
 .success > p {
   font-size: 16px;
-  color: var(--text-d);
+  color: var(--text-l);
   font-weight: 500;
   text-align: center;
   user-select: none;
@@ -49,9 +49,9 @@
 
 .success > a {
   font-size: 16px;
-  color: var(--primary-l);
+  color: var(--text-l);
   border-radius: 4px;
-  background-color: green;
+  background-color: var(--accent);
   padding: 8px 32px;
   text-decoration: none;
   user-select: none;
@@ -63,18 +63,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-l);
+  background-color: var(--primary-g);
 }
 
 .separator > div {
   height: 70%;
   width: 1.5px;
-  background-color: var(--primary-g);
+  background-color: var(--primary-l);
+  opacity: 0.25;
 }
 
 .payment {
   width: 25%;
-  background-color: var(--primary-l);
+  background-color: var(--primary-g);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,7 +90,7 @@
 
 .payment > div > p {
   font-size: 28px;
-  color: var(--text-d);
+  color: var(--text-l);
   cursor: default;
   user-select: none;
 }
@@ -110,7 +111,7 @@
   align-items: flex-start;
   padding: 1.25rem;
   gap: 1.25rem;
-  background-color: var(--primary-l);
+  background-color: var(--primary-g);
 }
 
 .form_title > h1 {
@@ -139,7 +140,8 @@
 
 .form_field {
   width: 100%;
-  background-color: var(--primary-l);
+  background-color: var(--primary-g);
+  color: var(--text-l);
   border-radius: 4px;
   border: 1px solid var(--accent);
   font-size: 16px;
@@ -152,7 +154,7 @@
 }
 
 .form_field::placeholder {
-  color: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.25);
 }
 
 .form_submit {
@@ -163,7 +165,7 @@
   border-radius: 4px;
   outline: none;
   border: none;
-  color: var(--primary-l);
+  color: var(--text-l);
   cursor: pointer;
   user-select: none;
   transition: background-color 200ms ease-in-out;

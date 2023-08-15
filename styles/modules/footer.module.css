@@ -6,12 +6,12 @@
   align-items: center;
   justify-content: flex-start;
   gap: 1.5rem;
-  background-color: var(--accent);
+  background-color: var(--primary-l);
   padding: 1.5rem;
 }
 
 .logo {
-  width: 100px;
+  width: 50px;
 }
 
 .logo > svg {
@@ -27,7 +27,7 @@
 
 .nav > a {
   text-decoration: none;
-  color: var(--primary-l);
+  color: var(--text-l);
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
@@ -36,7 +36,7 @@
 
 .footer_wrapper > hr {
   width: 40%;
-  background-color: var(--primary-l);
+  background-color: var(--text-l);
   opacity: 0.5;
 }
 
@@ -45,7 +45,7 @@
   flex-direction: column;
   align-items: center;
   font-size: 16px;
-  color: var(--primary-l);
+  color: var(--text-l);
   opacity: 0.75;
   cursor: default;
   user-select: none;
@@ -96,7 +96,7 @@
 
 @media screen and (max-width: 640px) {
   .logo {
-    width: 75px;
+    width: 36px;
   }
 }
 

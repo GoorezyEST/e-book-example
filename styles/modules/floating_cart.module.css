@@ -6,8 +6,8 @@
   height: 54px;
   z-index: 5000;
   border-radius: 4px;
-  background-color: var(--primary-l);
-  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.15);
+  background-color: var(--primary-d);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .floating_cart > span {
@@ -21,7 +21,7 @@
   background-color: var(--accent);
   font-size: 16px;
   font-weight: 700;
-  color: var(--primary-l);
+  color: var(--text-l);
 }
 
 .floating_cart > a {

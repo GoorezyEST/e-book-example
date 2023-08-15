@@ -48,12 +48,7 @@ export default function BookForm() {
     });
 
     emailjs
-      .send(
-        process.env.EMAILJS_SERVICE,
-        process.env.EMAILJS_TEMPLATE,
-        data,
-        process.env.EMAILJS_KEY
-      )
+      .send("service_eijyayp", "template_rihm5qb", data, "aK54xJx9UA3rdUWrf")
       .then(() => {
         isSended(true);
         setSuccess(true);
@@ -98,7 +93,7 @@ export default function BookForm() {
                     errors.name?.type === "minLength"
                       ? "red"
                       : !errors.name && getFieldState("name").isDirty
-                      ? "green"
+                      ? "var(--accent)"
                       : "",
                 }}
               >
@@ -139,7 +134,7 @@ export default function BookForm() {
                     errors.email?.type === "pattern"
                       ? "red"
                       : !errors.email && getFieldState("email").isDirty
-                      ? "green"
+                      ? "var(--accent)"
                       : "",
                 }}
               >
@@ -175,7 +170,7 @@ export default function BookForm() {
                     errors.phone?.type === "pattern"
                       ? "red"
                       : !errors.phone && getFieldState("phone").isDirty
-                      ? "green"
+                      ? "var(--accent)"
                       : "",
                 }}
               >
