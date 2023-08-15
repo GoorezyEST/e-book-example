@@ -48,25 +48,21 @@ export default function BookForm() {
     });
 
     emailjs
-      .send("service_rpgnuyg", "template_za8qoja", data, "V9U9Zv_ubNcViGpcq")
+      .send(
+        process.env.EMAILJS_SERVICE,
+        process.env.EMAILJS_TEMPLATE,
+        data,
+        process.env.EMAILJS_KEY
+      )
       .then(() => {
-        emailjs
-          .send(
-            "service_rpgnuyg",
-            "template_5zyiwog",
-            data,
-            "V9U9Zv_ubNcViGpcq"
-          )
-          .then(() => {
-            isSended(true);
-            setSuccess(true);
-            reset();
-            restartAfterSend();
-            isSending(false);
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-          });
+        isSended(true);
+        setSuccess(true);
+        reset();
+        restartAfterSend();
+        isSending(false);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
       });
   };
 
