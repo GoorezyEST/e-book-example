@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://ecommerce-cleaning-products-example.vercel.app//sitemap.xml
