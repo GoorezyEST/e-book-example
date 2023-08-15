@@ -1,7 +1,7 @@
 export default function sitemap() {
   return [
     {
-      url: "https://ecommerce-cleaning-products-example.vercel.app/",
+      url: "https://electronic-booking.vercel.app/",
       lastModified: new Date(),
     },
   ];

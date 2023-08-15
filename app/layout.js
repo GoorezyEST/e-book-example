@@ -8,33 +8,23 @@ const nunitoSans = Nunito_Sans({
 });
 
 export const metadata = {
-  metadataBase: new URL(
-    "https://ecommerce-cleaning-products-example.vercel.app/"
-  ),
-  title: "La esquina de la limpieza",
+  metadataBase: new URL("https://electronic-booking.vercel.app/"),
+  title: "E-Booking",
   description:
-    "En la esquina de la limpieza te ofrecemos una amplia gama de productos de calidad para el cuidado de tu hogar a un precio accesible. ¡Puedes ver nuestros productos y reservar un pedido a través de nuestro sitio web!",
+    "E-Booking es un proyecto personal destinado a simular una plataforma web utilizable en una situación del mundo real.",
   alternates: {
-    canonical: "https://ecommerce-cleaning-products-example.vercel.app/",
+    canonical: "https://electronic-booking.vercel.app/",
   },
   openGraph: {
-    title: "La esquina de la limpieza",
-    sitename: "La esquina de la limpieza",
-    url: "https://ecommerce-cleaning-products-example.vercel.app/",
+    title: "E-Booking",
+    sitename: "E-Booking",
+    url: "https://electronic-booking.vercel.app/",
   },
   keywords: [
-    "La esquina de la limpieza",
-    "limpieza",
-    "productos de limpieza",
-    "productos limpieza reserva",
-    "productos limpieza",
-    "detergente",
-    "lavandina",
-    "esponja",
-    "rejilla",
-    "La Plata",
-    "productos de limpieza La Plata",
-    "La esquina de la limpieza La Plata",
+    "E-Booking",
+    "E-Booking test",
+    "E-Booking example",
+    "Example proyect",
   ],
 };
 
