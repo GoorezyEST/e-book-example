@@ -2,7 +2,11 @@ import { useGlobal } from "@/contexts/GlobalContext";
 import React, { useEffect, useRef, useState } from "react";
 import styles from "@/styles/modules/product.module.css";
 import Link from "next/link";
-import { transformString, resizeImgurImages } from "@/functions/functions";
+import {
+  transformString,
+  resizeImgurImages,
+  formatPrice,
+} from "@/functions/functions";
 
 export default function Product({ item, index }) {
   const { addToCart, removeFromCart, setAddedProducts, addedProducts } =
@@ -24,6 +28,11 @@ export default function Product({ item, index }) {
     } else {
       img.addEventListener("load", loaded);
     }
+
+    return () => {
+      // Cleanup: Remove the event listener when the component unmounts
+      img.removeEventListener("load", loaded);
+    };
   }, []);
 
   useEffect(() => {
@@ -71,7 +80,7 @@ export default function Product({ item, index }) {
       </Link>
       <div className={styles.product_detail}>
         <div>
-          <span>${item.price}</span>
+          <span>{formatPrice(item.price)}</span>
           <span className={styles.product_name}>{item.name}</span>
         </div>
         <div>

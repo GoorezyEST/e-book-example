@@ -107,7 +107,7 @@
   .hero_content > p {
     font-size: 20px;
     line-height: calc(20px * 1.5);
-    color: var(--primary-l);
+    color: var(--text-l);
     width: 50%;
   }
 
@@ -125,7 +125,7 @@
   .hero_content > p {
     font-size: 20px;
     line-height: calc(20px * 1.5);
-    color: var(--primary-l);
+    color: var(--text-l);
     width: 60%;
   }
 
@@ -143,7 +143,7 @@
   .hero_content > p {
     font-size: 20px;
     line-height: calc(20px * 1.5);
-    color: var(--primary-l);
+    color: var(--text-l);
     width: 85%;
   }
 
@@ -167,7 +167,7 @@
   .hero_content > p {
     font-size: 16px;
     line-height: calc(16px * 1.5);
-    color: var(--primary-l);
+    color: var(--text-l);
     width: 85%;
   }
 
@@ -192,7 +192,7 @@
   .hero_content > p {
     font-size: 16px;
     line-height: calc(16px * 1.5);
-    color: var(--primary-l);
+    color: var(--text-l);
     width: 100%;
   }
 

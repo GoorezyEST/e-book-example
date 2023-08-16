@@ -10,3 +10,9 @@ export function transformString(inputString) {
 
   return lowercaseString;
 }
+
+export function formatPrice(price) {
+  const numericValue = parseFloat(price);
+  const priceStr = numericValue.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&.");
+  return "$ " + priceStr.replace(".00", ",00");
+}

@@ -117,7 +117,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: var(--content-spaces);
+  gap: 1.25rem;
 }
 
 .content {
@@ -138,6 +138,7 @@
   flex-direction: column;
   align-items: center;
   gap: var(--content-spaces);
+  padding: 1.25rem 0;
 }
 
 .title {
@@ -161,9 +162,11 @@
 }
 
 .list {
-  width: max-content;
-  display: grid;
-  grid-template-columns: repeat(4, 150px);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  padding: 0 var(--content-spaces);
   gap: var(--content-spaces);
   padding: 0 var(--content-spaces) var(--content-spaces) var(--content-spaces);
   border-radius: 4px;

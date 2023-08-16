@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { useGlobal } from "@/contexts/GlobalContext";
 import Link from "next/link";
 import emailjs from "emailjs-com";
+import { formatPrice } from "@/functions/functions";
 
 export default function BookForm() {
   const { totalPrice, cart, restartAfterSend, success, setSuccess } =
@@ -68,7 +69,7 @@ export default function BookForm() {
           <div className={styles.payment}>
             <div>
               <p>Total</p>
-              <span>$ {totalPrice}</span>
+              <span>{formatPrice(totalPrice)}</span>
             </div>
           </div>
           <div className={styles.separator}>

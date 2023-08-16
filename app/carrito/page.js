@@ -7,6 +7,7 @@ import styles from "@/styles/modules/carrito.module.css";
 import Link from "next/link";
 import BookForm from "@/components/BookForm";
 import Footer from "@/components/Footer";
+import { formatPrice } from "@/functions/functions";
 
 export default function Carrito() {
   const {
@@ -88,7 +89,9 @@ export default function Carrito() {
               <ul className={styles.row_content}>
                 {cart.map((item, index) => {
                   return (
-                    <li key={index}>$ {item.price * quantities[index]}</li>
+                    <li key={index}>
+                      {formatPrice(item.price * quantities[index])}
+                    </li>
                   ); // Display individual price
                 })}
               </ul>

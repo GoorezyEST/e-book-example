@@ -135,7 +135,7 @@
   }
   .dropdown_link {
     font-size: var(--normal);
-    color: var(--text-d);
+    color: var(--text-l);
     text-decoration: none;
     cursor: pointer;
     user-select: none;

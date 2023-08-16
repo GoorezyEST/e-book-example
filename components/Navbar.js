@@ -6,26 +6,8 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  // const [screenWidth, setScreenWidth] = useState(null);
   const { cart } = useGlobal();
   const pathname = usePathname();
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setScreenWidth(window.innerWidth);
-  //   };
-
-  //   // Initial check
-  //   handleResize();
-
-  //   // Add event listener to handle resize
-  //   window.addEventListener("resize", handleResize);
-
-  //   // Clean up the event listener on unmount
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
 
   const toggleMenu = () => {
     setIsOpen((prevState) => !prevState);
@@ -59,7 +41,7 @@ export default function Navbar() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                fill="currentColor"
+                fill="var(--text-l)"
               >
                 <path
                   fillRule="evenodd"
@@ -73,7 +55,7 @@ export default function Navbar() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                fill="currentColor"
+                fill="var(--text-l)"
               >
                 <path
                   fillRule="evenodd"

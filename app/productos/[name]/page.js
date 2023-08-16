@@ -7,7 +7,11 @@ import styles from "@/styles/modules/dynamic_product.module.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import { transformString, resizeImgurImages } from "@/functions/functions";
+import {
+  transformString,
+  resizeImgurImages,
+  formatPrice,
+} from "@/functions/functions";
 import Breadcrumb from "@/components/Breadcrumb";
 import FloatingCart from "@/components/FloatingCart";
 
@@ -168,7 +172,7 @@ export default function Page() {
 
                 <div className={styles.info}>
                   <h1>{product.name}</h1>
-                  <span>$ {product.price}</span>
+                  <span>{formatPrice(product.price)}</span>
                   <div className={styles.description}>
                     <h2>Descripción</h2>
                     <p>{product.text}</p>
